@@ -5,16 +5,25 @@ import { Stream } from "./Stream";
 import { DownloadNow } from "./DownloadNow";
 import { GroupWatch } from "./GroupWatch";
 import { MarvelStudio } from "./MarvelStudio";
+import { GridTheme } from "./GridTheme";
+import { Devices } from "./Devices";
+import { Advertise } from "./Advertise";
+import { Footer } from "../footer/Footer";
+
 
 export const Login = () => {
   return (
     <>
       <Main>
+        
         <Banner />
         <Stream />
         <GroupWatch />
-        <MarvelStudio/>
+        <MarvelStudio />
+        <GridTheme />
         <DownloadNow />
+        <Advertise />
+        <Devices />
       </Main>
     </>
   );
