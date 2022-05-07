@@ -13,6 +13,26 @@ export const DisneyKids = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -61,6 +81,7 @@ export const DisneyKids = () => {
 };
 
 const Container = styled.section`
+  padding: 0 calc(3.5vw + 5px);
   h1 {
     padding: 10px 15px;
     font-size: 1.7rem;

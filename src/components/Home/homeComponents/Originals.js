@@ -13,6 +13,26 @@ export const Originals = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <>

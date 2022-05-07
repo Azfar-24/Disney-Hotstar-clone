@@ -29,7 +29,7 @@ export const Devices = () => {
               <img src={img1} alt="logo/img" />
               <span>Laptop</span>
             </Image>
-            <Image>
+            <Image style={{ width: "11%", objectFit: "center" }}>
               <img src={img3} alt="logo/img" />
               <span>Mobile</span>
             </Image>
@@ -68,8 +68,8 @@ const GridImg = styled.div`
   flex-wrap: wrap-reverse;
   margin: 20px auto;
   @media screen and (max-width: 950px) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); */
   }
 `;
 const Image = styled.div`
@@ -88,8 +88,8 @@ const Image = styled.div`
     object-fit: cover;
     border-radius: 8px;
     @media screen and (max-width: 950px) {
-width: 100%;
-  }
+      width: 100%;
+    }
   }
   span {
     margin-top: 10px;
